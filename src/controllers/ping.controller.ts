@@ -1,5 +1,9 @@
 import { Request, Response } from "express";
 export const pingHandler = (req:Request, res:Response) : void => {
+    console.log("request body is",req.body)
+    console.log("query params is",req.query)
+    console.log("url params is", req.params)
+
     res.send("pong");
   }
 
